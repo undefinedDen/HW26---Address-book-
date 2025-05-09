@@ -2,12 +2,12 @@ package app.service;
 
 import app.exception.AppEmptyException;
 import app.exception.AppUserInputException;
-import app.valid.AppValid;
+import app.validator.AppValidator;
 
 public class AppService {
-    AppValid validator;
+    AppValidator validator;
 
-    public AppService(AppValid validator) {
+    public AppService(AppValidator validator) {
         this.validator = validator;
     }
 

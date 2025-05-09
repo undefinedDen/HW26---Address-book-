@@ -1,4 +1,4 @@
-package app.valid;
+package app.validator;
 
 import app.exception.AppEmptyException;
 import app.exception.AppUserInputException;
@@ -6,7 +6,7 @@ import app.exception.AppUserInputException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class AppValid {
+public class AppValidator {
 
     public void validateEmptyAddress(String streetName, String buildingNumber) throws AppEmptyException {
         if (streetName.trim().isEmpty() || buildingNumber.trim().isEmpty()) {
