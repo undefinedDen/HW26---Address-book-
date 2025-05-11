@@ -22,10 +22,10 @@ public class AppController {
         String street = view.getInputStreet();
         String buildingNumber = view.inputBuildingNumber();
 
-        if (service.getValidUserName(userName)) {
+        if (service.isUserNameValid(userName)) {
             userName = service.takeFirstLetterBig(userName);
             user = new User(userName, address);
-            if (service.getValidAddress(street, buildingNumber)) {
+            if (service.isAddressValid(street, buildingNumber)) {
                 street = service.takeFirstLetterBig(street);
                 user.setAddress(street, buildingNumber);
                 System.out.println(user + " " + user.getAddress());

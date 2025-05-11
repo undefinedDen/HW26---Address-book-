@@ -11,7 +11,7 @@ public class AppService {
         this.validator = validator;
     }
 
-    public boolean getValidUserName(String userName){
+    public boolean isUserNameValid(String userName){
         try{
             validator.validateEmptyUser(userName);
             validator.validateUserNameFormat(userName);
@@ -21,7 +21,7 @@ public class AppService {
             return false;
         }
     }
-    public boolean getValidAddress(String street, String buildingNumber) {
+    public boolean isAddressValid(String street, String buildingNumber) {
         try {
             validator.validateEmptyAddress(street,buildingNumber);
             validator.validateFormatAddress(street, buildingNumber);

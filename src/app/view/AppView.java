@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class AppView {
     private static final Scanner scanner = new Scanner(System.in);
 
-    public <T> void displayInfo(T output) {
-        System.out.println(output);
-    }
 
     public String getInputStreet() {
         System.out.print("Input street name: ");
